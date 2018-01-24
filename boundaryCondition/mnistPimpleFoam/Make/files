@@ -1,0 +1,4 @@
+mnistFixedValue/mnistFixedValueFvPatchFields.C
+mnistPimpleFoam.C
+
+EXE = $(FOAM_USER_APPBIN)/mnistPimpleFoam

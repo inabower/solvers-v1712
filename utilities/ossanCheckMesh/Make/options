@@ -1,0 +1,18 @@
+EXE_INC = \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(LIB_SRC)/fileFormats/lnInclude \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/sampling/lnInclude \
+    -I$(LIB_SRC)/surfMesh/lnInclude \
+    -I$(LIB_SRC)/dynamicMesh/lnInclude \
+    -I/home/inabower/OpenFOAM/tensorflow/lnInclude/bazel-tensorflow/external/nsync/public \
+    -I/home/inabower/OpenFOAM/tensorflow/lnInclude
+
+EXE_LIBS = \
+    -lmeshTools \
+    -lsampling \
+    -ldynamicMesh \
+    -lpthread \
+    -L/home/inabower/OpenFOAM/tensorflow/bazel-bin/tensorflow \
+    -ltensorflow_cc \
+    -ltensorflow_framework
